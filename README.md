@@ -6,7 +6,7 @@
 
 ## 🌌 Live Demo
 
-[🔗 View the Demo](https://your-demo-link.com) <!-- Replace with actual URL -->
+[🔗 View the Demo](https://stellardynamics.vercel.app/) 
 
 ---
 
@@ -44,13 +44,7 @@ Edit
 - [Font Awesome](https://fontawesome.com/)
 - [Unsplash](https://unsplash.com/) (for imagery)
 
----
 
-## 📸 Screenshots
-
-> *(Add visual screenshots or GIFs here to show off the interface.)*
-
----
 
 ## 🧪 Getting Started
 
@@ -74,18 +68,12 @@ Include real NASA/SpaceX mission data via API
 
 📫 Connect with the Creator
 Hillary Mwangi
-Twitter: @yourhandle
-Email: you@example.com
+Email: hillarymwangimaina@.com
 
 📄 License
 MIT License.
 Use it, build on it, and launch your own vision to the stars. 🌠
 
-vbnet
-Copy
-Edit
-
-Let me know if you'd like a **dark mode preview image**, GitHub badges, or a personalized description added!
 
 
 
