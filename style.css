@@ -1,0 +1,251 @@
+/* ========== Base Typography ========== */
+body {
+  font-family: 'Georgia', serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ========== Transitions ========== */
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.origin-left {
+  transform-origin: left;
+}
+
+.scale-x-0 {
+  transform: scaleX(0);
+}
+
+.group:hover .group-hover\:scale-x-100 {
+  transform: scaleX(1);
+}
+
+/* ========== Infinite Scroll Animation ========== */
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 60s linear infinite;
+}
+
+/* ========== Earth Video Styling ========== */
+#earthVideo {
+  position: relative;
+  top: -4rem;
+  height: calc(100% + 4rem);
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* ========== Pulse Overlay Animation ========== */
+@keyframes pulse-overlay {
+  0%   { opacity: 0.5; }
+  20%  { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+#home .animate-pulse-overlay {
+  animation: pulse-overlay 10s ease-in-out infinite;
+}
+
+/* ========== Black Overlay Fade Sequence ========== */
+@keyframes hide-video-end {
+  0%, 19.99% { opacity: 1; }
+  20%, 60%    { opacity: 0.5; }
+  60.01%, 100% { opacity: 1; }
+}
+
+.hide-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  z-index: 10;
+  pointer-events: none;
+  animation: hide-video-end 42s linear infinite;
+}
+
+@media (max-width: 768px) {
+  @keyframes reveal-middle-video {
+    0%, 19.99% { opacity: 1; }
+    20%, 60%   { opacity: 0.5; }
+    60.01%, 100% { opacity: 1; }
+  }
+
+  .hide-overlay {
+    animation: reveal-middle-video 30s linear infinite;
+  }
+}
+
+/* ========== Partner Logos Hover Effects ========== */
+#partnerScroll .bg-white {
+  filter: brightness(1);
+}
+
+@keyframes fadeIn {
+  from { transform: scale(0.9); opacity: 0.8; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+#partnerScroll .hover\:shadow-lg:hover {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Ensure cards keep equal height */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-card img {
+  height: 16rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+section[id], div[id] {
+  scroll-margin-top: 120px;
+}
+
+/* ========== Testimonials Carousel (Updated to match Service Cards) ========== */
+.phone-viewport {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #fafafa;
+  border: 10px solid #222;
+}
+
+.carousel-item {
+  padding: 30px 10px;
+  float: left;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__image img {
+  transform: scale(1.2);
+}
+
+.card__image .badge {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #666;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card__info {
+  flex-grow: 1;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__title {
+  font-weight: 400;
+  margin-top: 0;
+  line-height: 1;
+}
+
+.card__desc {
+  opacity: 0.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  line-height: 1.4;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.card__author {
+  font-style: italic;
+  color: #666;
+  margin-top: auto;
+  font-size: 0.85rem;
+}
+
+
+.testimonial-card {
+  height: auto;
+  max-height: 300px;
+}
+
+/* Hide scrollbar for this specific textarea */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  overflow: auto; /* Allow internal scroll without showing bar */
+}
+
+/* Optional: Hide scrollbar completely in Webkit browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.fa-brands {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+}

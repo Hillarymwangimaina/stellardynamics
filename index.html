@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stellar Dynamics - Space Agency</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script> 
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (for social icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white font-sans">
+
+  <!-- Navigation -->
+<nav class="bg-black text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 border-b border-gray-800">
+  <!-- Left Side Links -->
+  <div class="hidden md:flex space-x-6">
+    <a href="#home" class="hover:text-[#00ffff] transition-colors">Home</a>
+    <a href="#services" class="hover:text-[#00ffff] transition-colors">Services</a>
+  </div>
+
+  <!-- Center Logo/Title -->
+  <h1 class="text-xl md:text-2xl font-serif italic tracking-wider flex-1 text-center">
+    Stellar Dynamics
+  </h1>
+
+  <!-- Right Side Links -->
+  <div class="hidden md:flex space-x-6">
+    <a href="#projects" class="hover:text-[#00ffff] transition-colors">Projects</a>
+    <a href="#contact" class="hover:text-[#00ffff] transition-colors">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="home" class="relative h-screen overflow-hidden">
+  <!-- Embedded YouTube Video -->
+  <div class="absolute inset-0 z-0">
+    <iframe 
+      id="earthVideo"
+      class="w-full h-full object-cover"
+      src="https://www.youtube.com/embed/Xf07p_SjXKI?start=0&end=30&autoplay=1&loop=1&playlist=Xf07p_SjXKI&controls=0&mute=1&rel=0&showinfo=0"
+      title="Spinning Earth Animation"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="filter: brightness(1.2); border: none; outline: none;"
+    ></iframe>
+  </div>
+
+  <!-- Overlay with local animation -->
+  <div id="overlay" class="absolute inset-0 bg-black animate-pulse-overlay z-10"></div>
+
+ <!-- Centered Title -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 z-20">
+  <h1 class="text-5xl md:text-7xl font-serif italic tracking-wider mb-4 hover:scale-105 transition-transform duration-300 text-white">
+    Stellar Dynamics
+  </h1>
+  <p class="text-xl md:text-2xl uppercase tracking-widest text-gray-300">Pioneers of Deep Space Exploration</p>
+  <p class="text-center text-lg md:text-xl max-w-3xl mx-auto mb-16 text-gray-400">
+        We deliver cutting-edge solutions for interstellar research, satellite deployment, and lunar colonization.
+      </p>
+  <!-- Get Started Button -->
+  <a href="#services" class="mt-6 inline-block bg-[#00ffff] text-black px-8 py-3 rounded-lg hover:bg-[#00cccc] transition-colors duration-300 shadow-lg hover:shadow-xl">
+    Get Started
+  </a>
+</div>
+</header>
+  
+  <section id="services" class="py-20 px-6 md:px-12 lg:px-24">
+    <div class="max-w-6xl mx-auto">
+      <!-- services explaination -->
+<div class="flex flex-col md:flex-row-reverse gap-8 mb-16 items-center">
+  <img src="https://images.unsplash.com/photo-1457364983758-510f8afa9f5f?auto=format&fit=crop&w=2070&q=80" 
+       alt="Our purpose, to get you to the cosmos" 
+       class="w-full md:w-1/2 rounded-lg shadow-lg hover:scale-105 transition-transform" />
+       
+  <div class="md:w-1/2">
+    <h3 class="text-2xl md:text-3xl font-serif italic mb-2">We deliver cutting-edge solutions for interstellar research, satellite deployment, and lunar colonization.</h3>
+    <p class="text-xl text-[#00ffff] mb-4">EST 2026</p>    
+    <p>Whether it's to the ISS or to Mars we can get you there</p>
+    <button class="mt-6 bg-[#00ffff] text-black px-6 py-2 rounded hover:bg-[#00cccc] transition-colors">Book a flight</button>
+  </div>
+</div>
+
+      <!-- Services Section -->
+<section id="services" class="py-20 px-6 md:px-12 lg:px-24">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-light italic text-center mb-16 relative inline-block group">
+      Our Core Services
+      <span class="block w-full h-1 bg-[#00ffff] mt-2 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
+    </h2>
+
+    <p class="text-center text-lg md:text-xl max-w-3xl mx-auto mb-16 text-gray-400">
+      We deliver cutting-edge solutions for interstellar research, satellite deployment, and lunar colonization.
+    </p>
+
+
+
+<!-- Side-by-Side Sections Container -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-8">
+
+    <!-- Satellite Launch Card -->
+    <div
+      class="relative h-[38rem] flex flex-col justify-end bg-cover bg-center group transition-all duration-300 rounded-lg"
+      style="background-image: url('https://images.unsplash.com/photo-1457364983758-510f8afa9f5f?auto=format&fit=crop&w=2070&q=80');"
+    >
+      <!-- Overlay -->
+      <div class="w-full h-full p-6 bg-black/30 group-hover:bg-black/80 transition-colors duration-300 flex flex-col justify-end">
+        <h3 class="text-2xl md:text-3xl font-serif italic mb-2">Satellite Launch</h3>
+        <p class="text-xl text-[#00ffff] mb-4">From $15M per launch</p>
+        <p class="mb-4">
+          Our Falcon X rocket delivers satellites into low Earth orbit with unmatched reliability and precision.
+        </p>
+
+        <ul class="list-disc pl-5 mt-4 space-y-1 hidden md:block">
+          <li>LEO & GTO capabilities</li>
+          <li>Modular payload bays</li>
+          <li>Reusability up to 10 launches</li>
+          <li>Real-time telemetry</li>
+          <li>Launch insurance included</li>
+          <li>Customer mission control access</li>
+        </ul>
+
+        <button class="mt-6 self-start bg-[#00ffff] text-black px-6 py-2 rounded hover:bg-[#00cccc] transition-colors">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <!-- Crewed Missions Card -->
+    <div
+      class="relative h-[38rem] flex flex-col justify-end bg-cover bg-center group transition-all duration-300 rounded-lg"
+      style="background-image: url('https://images.unsplash.com/photo-1578852799294-cf61faaec83c?auto=format&fit=crop&w=1935&q=80');"
+    >
+      <!-- Overlay -->
+      <div class="w-full h-full p-6 bg-black/30 group-hover:bg-black/80 transition-colors duration-300 flex flex-col justify-end">
+        <h3 class="text-2xl md:text-3xl font-serif italic mb-2">Crewed Missions</h3>
+        <p class="text-xl text-[#00ffff] mb-4">From $200M per mission</p>
+        <p class="mb-4">
+          We provide end-to-end crewed missions to the International Space Station and beyond.
+        </p>
+
+        <ul class="list-disc pl-5 mt-4 space-y-1 hidden md:block">
+          <li>Certified astronaut training</li>
+          <li>Life-support systems redundancy</li>
+          <li>In-flight medical support</li>
+          <li>Emergency evacuation protocols</li>
+          <li>Mission simulations</li>
+          <li>Post-mission debriefing</li>
+        </ul>
+
+        <button class="mt-6 self-start bg-[#00ffff] text-black px-6 py-2 rounded hover:bg-[#00cccc] transition-colors">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+</div>
+</section>
+
+      <!-- services explanation -->
+<div class="flex flex-col md:flex-row-reverse gap-8 mb-16 items-center">
+  <img src="https://petapixel.com/assets/uploads/2023/11/8026703960_46baf09e60_k.jpg" 
+       alt="Our mission: launching humanity beyond Earth" 
+       class="w-full md:w-1/2 rounded-lg shadow-lg hover:scale-105 transition-transform" />
+
+  <div class="md:w-1/2">
+    <h3 class="text-2xl md:text-3xl font-serif italic mb-2">
+      Pioneering missions for interstellar exploration, orbital infrastructure, and permanent lunar habitats.
+    </h3>
+    <p class="text-xl text-[#00ffff] mb-4">EST 2026</p>    
+    <p class="text-lg text-gray-300">
+      From Earth orbit to the edge of the solar system—whether it's a research payload to the ISS, a satellite into low Earth orbit, or a one-way trip to Mars—we're your launchpad.
+    </p>
+    <button class="mt-6 bg-[#00ffff] text-black px-6 py-2 rounded hover:bg-[#00cccc] transition-colors">
+      Book a Flight
+    </button>
+  </div>
+</div>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 px-6 md:px-12 lg:px-24 bg-gray-900">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between">
+      <!-- Heading and Paragraph on the Left -->
+      <div class="lg:w-1/3 mb-10 lg:mb-0">
+        <h2 class="text-4xl md:text-5xl font-light italic mb-4 relative inline-block group text-white">
+          What Our Clients Are Saying
+          <span class="block w-full h-1 bg-[#00ffff] mt-2 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
+        </h2>
+        <p class="text-gray-300 mt-4">
+          From lunar payloads to private astronaut missions, our clients trust Stellar Dynamics to push the boundaries of what's possible.
+        </p>
+
+        <!-- Navigation Arrows Below Paragraph -->
+        <div class="flex gap-4 mt-6">
+          <button id="prevTestimonial" class="bg-gray-800 text-white p-3 rounded-full hover:bg-[#00ffff] transition-colors">
+            &lt;
+          </button>
+          <button id="nextTestimonial" class="bg-gray-800 text-white p-3 rounded-full hover:bg-[#00ffff] transition-colors">
+            &gt;
+          </button>
+        </div>
+      </div>
+
+      <!-- Testimonial Cards on the Right -->
+      <div class="lg:w-2/3 relative overflow-hidden">
+        <div id="testimonialCarousel" class="flex gap-6 overflow-x-scroll scroll-smooth scrollbar-hide px-4 py-2">
+        
+          <!-- Testimonial Card 1 -->
+          <div class="testimonial-card min-w-[300px] md:min-w-[500px] bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transition-transform">
+            <p class="text-lg text-gray-300 mb-4">“Stellar Dynamics gave us the tools and trust to launch our nano-sat mission. Their team is second to none.”</p>
+            <div class="flex items-center gap-4">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client Photo" class="w-12 h-12 rounded-full object-cover" />
+              <div>
+                <p class="font-semibold text-white">Dr. Aaron Clarke</p>
+                <p class="text-sm text-[#00ffff]">Astrophysicist, NovaLabs</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div class="testimonial-card min-w-[300px] md:min-w-[500px] bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transition-transform">
+            <p class="text-lg text-gray-300 mb-4">“Our lunar payload reached orbit flawlessly. We’ve never seen execution like this before.”</p>
+            <div class="flex items-center gap-4">
+              <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client Photo" class="w-12 h-12 rounded-full object-cover" />
+              <div>
+                <p class="font-semibold text-white">Sophie Liang</p>
+                <p class="text-sm text-[#00ffff]">CEO, OrbitalReach</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div class="testimonial-card min-w-[300px] md:min-w-[500px] bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transition-transform">
+            <p class="text-lg text-gray-300 mb-4">“Flying with Stellar Dynamics was like a dream—flawless tech, supportive crew, and zero-gravity elegance.”</p>
+            <div class="flex items-center gap-4">
+              <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Client Photo" class="w-12 h-12 rounded-full object-cover" />
+              <div>
+                <p class="font-semibold text-white">Captain Leon Reyes</p>
+                <p class="text-sm text-[#00ffff]">Private Astronaut</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 4 - Elon Musk -->
+          <div class="testimonial-card min-w-[300px] md:min-w-[500px] bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transition-transform">
+            <p class="text-lg text-gray-300 mb-4">“The innovation and precision here are unmatched — Stellar Dynamics is pushing humanity further into space.”</p>
+            <div class="flex items-center gap-4">
+              <img src="https://th.bing.com/th?id=OIF.dKoELq48vP9%2bgrxFQZpmkA&w=241&h=180&c=7&r=0&o=5&pid=1.7" alt="Elon Musk Photo" class="w-12 h-12 rounded-full object-cover" />
+              <div>
+                <p class="font-semibold text-white">Elon Musk</p>
+                <p class="text-sm text-[#00ffff]">Founder, SpaceX & Tesla</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 5 - Jeff Bezos -->
+          <div class="testimonial-card min-w-[300px] md:min-w-[500px] bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transition-transform">
+            <p class="text-lg text-gray-300 mb-4">“Stellar Dynamics delivers excellence at every level — from engineering to experience, they are redefining space travel.”</p>
+            <div class="flex items-center gap-4">
+              <img src="https://th.bing.com/th/id/OIP._ace8ZpUgqG0oi_a1hZNuwHaEK?w=298&h=180&c=7&r=0&o=5&pid=1.7" alt="Jeff Bezos Photo" class="w-12 h-12 rounded-full object-cover" />
+              <div>
+                <p class="font-semibold text-white">Jeff Bezos</p>
+                <p class="text-sm text-[#00ffff]">Founder, Blue Origin & Amazon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End Testimonial Cards -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Partners Section -->
+<section class="py-12 bg-black overflow-hidden whitespace-nowrap">
+  <h2 class="text-center text-white text-3xl font-light mb-8">Our Esteemed Partners</h2>
+  <div id="partnerScroll" class="inline-flex animate-infinite-scroll">
+    <!-- Partner logos go here -->
+  </div>
+</section>
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6 md:px-12 lg:px-24 bg-gray-900">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-light italic text-center mb-16 relative inline-block group">
+        Notable Projects
+        <span class="block w-full h-1 bg-[#00ffff] mt-2 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+          <img src="https://th.bing.com/th/id/R.2a85aa7c074d863ee50121113c8ec086?rik=67TTmAH5pCdR0A&pid=ImgRaw&r=0" alt="Project Artemis" class="h-64 w-full object-cover transition-transform hover:scale-105" />
+          <div class="p-6">
+            <h3 class="text-xl font-serif italic mb-2">Project Artemis</h3>
+            <p class="text-gray-400">Establishing a sustainable presence on the Moon by 2030.</p>
+            <button class="mt-4 bg-[#00ffff] text-black px-4 py-2 rounded hover:bg-[#00cccc] transition-colors">View Details</button> 
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+          <img src="https://th.bing.com/th/id/OIP.hHKpQXPRkp_sBk5fx8XQJgHaFj?rs=1&pid=ImgDetMain" alt="Jupiter Probe" class="h-64 w-full object-cover transition-transform hover:scale-105" />
+          <div class="p-6">
+            <h3 class="text-xl font-serif italic mb-2">Jupiter Probe</h3>
+            <p class="text-gray-400">A deep-space probe designed to explore Jupiter’s atmosphere and moons.</p>
+            <button class="mt-4 bg-[#00ffff] text-black px-4 py-2 rounded hover:bg-[#00cccc] transition-colors">View Details</button> 
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+          <img src="https://th.bing.com/th/id/R.0235c9d0749235e25906711248c601c6?rik=%2bZ%2fzxdak%2b2iwfg&pid=ImgRaw&r=0" alt="Orion Station" class="h-64 w-full object-cover transition-transform hover:scale-105" />
+          <div class="p-6">
+            <h3 class="text-xl font-serif italic mb-2">Orion Station</h3>
+            <p class="text-gray-400">Next-generation orbital research station positioned near Mars.</p>
+            <button class="mt-4 bg-[#00ffff] text-black px-4 py-2 rounded hover:bg-[#00cccc] transition-colors">View Details</button> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- community section -->
+<div class="flex flex-col md:flex-row-reverse gap-8 mb-16 items-center">
+  <img src="https://th.bing.com/th/id/OIP.iL2diEYfdKxaXOcV1ii3OQHaEK?w=311&h=180&c=7&r=0&o=5&pid=1.7" 
+       alt="Join the Space Club Community" 
+       class="w-full md:w-1/2 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" />
+       
+  <div class="md:w-1/2">
+    <h3 class="text-2xl md:text-3xl font-serif italic mb-2">
+      Join the Space Club: A community of explorers, dreamers, and builders shaping humanity’s future beyond Earth.
+    </h3>
+    <p class="text-xl text-[#00ffff] mb-4">Launched in 2026</p>    
+    <p>
+      Whether you're into rocket science, space startups, memes from orbit, or just want to vibe with future Martians — you're home here.
+    </p>
+    <button class="mt-6 bg-[#00ffff] text-black px-6 py-2 rounded hover:bg-[#00cccc] transition-colors">
+      Join the Club
+    </button>
+  </div>
+</div>
+
+  <!-- FAQ Section -->
+<section class="py-20 px-6 md:px-12 lg:px-24 bg-black text-white">
+  <div class="flex flex-col lg:flex-row gap-12 items-start max-w-7xl mx-auto">
+
+    <!-- Left Side Card -->
+<div class="lg:w-1/3 bg-gray-900 border border-gray-700 rounded-xl shadow-lg p-6 text-center">
+  <h2 class="text-3xl md:text-4xl font-light italic mb-4">Frequently Asked Questions</h2>
+  <p class="text-gray-400 text-sm mb-4">
+    Got questions about space travel, training, or launch schedules? We’ve got the answers you need before joining the mission.
+  </p>
+  <img 
+    src="https://th.bing.com/th/id/OIP.8N2vnY7vl87sVIO_af8MOQHaFD?w=275&h=187&c=7&r=0&o=5&pid=1.7" 
+    alt="Astronaut with questions" 
+    class="w-full h-55 rounded-lg shadow-md"
+  />
+</div>
+
+
+    <!-- Right Side Questions -->
+    <div class="lg:w-2/3 space-y-4">
+
+      <!-- Question 0 -->
+      <div class="border border-gray-700 rounded-lg overflow-hidden">
+        <button onclick="toggleFaq(0)" class="w-full text-left px-6 py-4 bg-gray-800 flex justify-between items-center hover:bg-gray-700 transition-colors">
+          <span>What are your launch windows?</span>
+          <span id="faq-icon-0" class="transform transition-transform">+</span>
+        </button>
+        <div id="faq-answer-0" class="hidden px-6 pb-4 pt-2 bg-gray-800 text-gray-400">
+          <p>We operate with flexible launch windows based on mission requirements and orbital alignment. Most satellite missions can be scheduled within a 7-day window, while crewed missions require more precise timing for safety and docking compatibility.</p>
+        </div>
+      </div>
+
+      <!-- Question 1 -->
+      <div class="border border-gray-700 rounded-lg overflow-hidden">
+        <button onclick="toggleFaq(1)" class="w-full text-left px-6 py-4 bg-gray-800 flex justify-between items-center hover:bg-gray-700 transition-colors">
+          <span>Do you offer crewed mission training?</span>
+          <span id="faq-icon-1" class="transform transition-transform">+</span>
+        </button>
+        <div id="faq-answer-1" class="hidden px-6 pb-4 pt-2 bg-gray-800 text-gray-400">
+          <p>Yes, we provide comprehensive astronaut training including zero-gravity simulation, life-support systems familiarization, emergency protocols, and mission-specific simulations. Civilians receive the same rigorous training as professional astronauts.</p>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="border border-gray-700 rounded-lg overflow-hidden">
+        <button onclick="toggleFaq(2)" class="w-full text-left px-6 py-4 bg-gray-800 flex justify-between items-center hover:bg-gray-700 transition-colors">
+          <span>Is there an age limit for astronauts?</span>
+          <span id="faq-icon-2" class="transform transition-transform">+</span>
+        </button>
+        <div id="faq-answer-2" class="hidden px-6 pb-4 pt-2 bg-gray-800 text-gray-400">
+          <p>We accept applicants between the ages of 25 and 65. Exceptional cases may be considered outside this range depending on physical condition, experience, and mission needs.</p>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="border border-gray-700 rounded-lg overflow-hidden">
+        <button onclick="toggleFaq(3)" class="w-full text-left px-6 py-4 bg-gray-800 flex justify-between items-center hover:bg-gray-700 transition-colors">
+          <span>How long do missions last?</span>
+          <span id="faq-icon-3" class="transform transition-transform">+</span>
+        </button>
+        <div id="faq-answer-3" class="hidden px-6 pb-4 pt-2 bg-gray-800 text-gray-400">
+          <p>Mission durations vary by objective:</p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>Low Earth Orbit (LEO): 2–14 days</li>
+            <li>Lunar Missions: 10–30 days</li>
+            <li>Mars Transits: 6–9 months</li>
+            <li>Deep Space Research: Up to 18 months</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="border border-gray-700 rounded-lg overflow-hidden">
+        <button onclick="toggleFaq(4)" class="w-full text-left px-6 py-4 bg-gray-800 flex justify-between items-center hover:bg-gray-700 transition-colors">
+          <span>Can civilians travel to space?</span>
+          <span id="faq-icon-4" class="transform transition-transform">+</span>
+        </button>
+        <div id="faq-answer-4" class="hidden px-6 pb-4 pt-2 bg-gray-800 text-gray-400">
+          <p>Yes! We provide commercial access to space for private individuals. Our civilian program includes full training, medical evaluation, and mission planning to ensure a safe and unforgettable journey beyond Earth’s atmosphere.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+<section id="contact" class="py-20 px-6 md:px-12 lg:px-24 bg-gray-900">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
+
+    <!-- Contact Details Card (Left Side) -->
+    <div class="bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-8 flex flex-col justify-between w-full md:w-1/2">
+      <div>
+        <h3 class="text-3xl font-light italic mb-6 text-center">Contact Details</h3>
+
+        <div class="text-gray-300 space-y-4 mb-6">
+          <p><strong>Email:</strong> <a href="mailto:spaceclub@cosmosmail.com" class="hover:text-[#00ffff] transition-colors">spaceclub@cosmosmail.com</a></p>
+          <p><strong>Phone:</strong> +1 (555) 987-6543</p>
+          <p><strong>Address:</strong> 42 Lunar Base Ave, Sector 3, Moon Colony</p>
+        </div>
+
+        <!-- Social Icons -->
+      <div class="flex justify-start gap-6 text-[#00ffff] text-2xl mb-4">
+        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn" class="hover:text-[#00cccc]"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" class="hover:text-[#00cccc]"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="hover:text-[#00cccc]"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/15559876543" target="_blank" aria-label="WhatsApp" class="hover:text-[#00cccc]"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      </div>
+
+      <!-- Response Time -->
+      <p class="text-gray-400 text-sm text-center mt-4">We typically respond within 12 hours.</p>
+    </div>
+
+    <!-- Contact Form (Right Side) -->
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full md:w-1/2">
+      <h2 class="text-4xl md:text-5xl font-light italic text-center mb-16 relative inline-block group">
+        Reach Out to Our Mission Control
+        <span class="block w-full h-1 bg-[#00ffff] mt-2 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
+      </h2>
+
+      <form id="contactForm" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            class="w-full px-4 py-2 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff] bg-gray-700 text-white placeholder-gray-400" 
+            placeholder="you@example.com"
+          />
+          <div id="error-email" class="text-red-500 text-xs mt-1 hidden">Enter a valid email address</div>
+        </div>
+
+        <div class="mb-6">
+  <label for="request" class="block text-sm font-medium mb-1">Your Request</label>
+  <textarea 
+    id="request" 
+    name="request" 
+    required 
+    class="w-full px-4 py-2 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff] bg-gray-700 text-white placeholder-gray-400 h-10 no-scrollbar"
+    placeholder="Tell us how we can assist..."
+  ></textarea>
+  <div id="error-request" class="text-red-500 text-xs mt-1 hidden">Request is required</div>
+</div>
+
+        <div class="text-center">
+          <button 
+            type="submit" 
+            class="bg-[#00ffff] text-black px-6 py-3 rounded hover:bg-[#00cccc] transition-colors w-full">
+            Send Message
+          </button>
+        </div>
+
+        <div id="successMessage" class="mt-6 text-green-500 text-center font-semibold hidden">Your message has been sent successfully!</div>
+        <div id="errorMessage" class="mt-6 text-red-500 text-center font-semibold hidden">Please fix the errors above and try again.</div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Footer Section -->
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
+
+    <!-- Left Card -->
+<!-- Left Card -->
+<div class="bg-white rounded-[2rem] p-8 shadow-md mb-8 w-full md:w-1/2 text-[#00383F]">
+  <h3 class="text-3xl font-semibold mb-8">Stellar Dynamics</h3>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm font-medium">
+    <a href="#about" class="hover:text-[#00aaaa] transition-colors">About</a>
+    <a href="#services" class="hover:text-[#00aaaa] transition-colors">Services</a>
+    <a href="#therapists" class="hover:text-[#00aaaa] transition-colors">Therapists</a>
+    <a href="#resources" class="hover:text-[#00aaaa] transition-colors">Resources</a>
+    <a href="#contact" class="hover:text-[#00aaaa] transition-colors">Contact</a>
+    <a href="https://www.instagram.com" target="_blank" class="hover:text-[#00aaaa]">Instagram</a>
+    <a href="https://www.facebook.com" target="_blank" class="hover:text-[#00aaaa]">Facebook</a>
+    <a href="https://www.youtube.com" target="_blank" class="hover:text-[#00aaaa]">YouTube</a>
+    <a href="https://www.linkedin.com" target="_blank" class="hover:text-[#00aaaa]">LinkedIn</a>
+    <a href="#terms" class="hover:text-[#00aaaa]">Terms Of Use</a>
+    <a href="#privacy" class="hover:text-[#00aaaa]">Privacy Policy</a>
+  </div>
+  <p class="mt-8 text-xs text-gray-400">© [2035] Stellar Dynamics. All Rights Reserved.</p>
+</div>
+
+
+    <!-- Right Card: Background Image + Text Overlay -->
+    <div class="bg-cover bg-center bg-no-repeat rounded-lg p-6 shadow-md w-full mb-8 md:w-1/2" style="background-image: url('https://images.unsplash.com/photo-1578852799294-cf61faaec83c?auto=format&fit=crop&w=1935&q=80');">
+      <div class="relative h-full">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-6">
+          <div>
+            <h2 class="text-3xl font-light italic mb-6 text-white">Chart Your Course Through the Cosmos.</h2>
+<p class="text-lg text-white mb-6">Whether you're facing black holes or delayed, we're here to help you get back on course among the stars.</p>
+
+          </div>
+          <button class="bg-white text-black px-6 py-3 rounded hover:bg-[#00cccc] transition-colors"> 
+            Find Support Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
