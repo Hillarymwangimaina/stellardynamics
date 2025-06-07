@@ -249,3 +249,8 @@ section[id], div[id] {
   height: 1em;
   text-align: center;
 }
+/* Ensure no unwanted stretching */
+.service-card {
+  max-width: 300px;
+  margin: 0 auto;
+}
