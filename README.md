@@ -72,7 +72,8 @@ Email: hillarymwangimaina@.com
 
 📄 License
 MIT License.
-Use it, build on it, and launch your own vision to the stars. 🌠
+Use it, build on it,
+and launch your own vision to the stars. 🌠
 
 
 
